@@ -1,13 +1,17 @@
-import { Button } from '@/components/ui/button'
-import React from 'react'
+// app/page.jsx
+"use client"
+
+import { useEffect } from "react"
+import { useRouter } from "next/navigation"
 
 const Home = () => {
-  return (
-    <div>
-      <h1>My AI-Talker</h1>
-       <Button>Click me</Button>
-    </div>
-  )
+  const router = useRouter()
+
+  useEffect(() => {
+    router.replace("/dashboard")
+  }, [router])
+
+  return null 
 }
 
 export default Home
