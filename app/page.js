@@ -11,7 +11,7 @@ const Home = () => {
     router.replace("/dashboard")
   }, [router])
 
-  return null 
+  return null // optional: or show a loading spinner while redirecting
 }
 
 export default Home
